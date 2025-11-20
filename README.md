@@ -9,11 +9,9 @@ The system supports secure authentication, private and public note handling, lik
 <b>1) Features</b>
   
 #### User Authentication ####
-
-    - Secure sign-up and login with Firebase Authentication
-    - Token-based protected routes
-    - Role-based access for users and admins
-  
+  * Secure sign-up and login with Firebase Authentication
+  * Token-based protected routes
+  * Role-based access for users and admins
   
 #### Notes Management
     - Create, read, update, delete (CRUD) notes
