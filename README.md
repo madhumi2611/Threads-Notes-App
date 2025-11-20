@@ -1,129 +1,110 @@
-**NotesApp – Full-Stack Notes Management System**
-
+****NotesApp – Full-Stack Notes Management System****
+  
 A full-stack web application that allows users to create, manage, publish, and interact with notes.
 The system supports secure authentication, private and public note handling, likes, comments, and rating, making it both a personal notes manager and a collaborative community platform.
-
-
+  
+  
 ---
-
+  
 **1) Features**
-
+  
 #### User Authentication
 
     - Secure sign-up and login with Firebase Authentication
     - Token-based protected routes
     - Role-based access for users and admins
+  
+  
+#### Notes Management
+    - Create, read, update, delete (CRUD) notes
+    - Mark notes as private or publish them to the community
+    - Indexed PostgreSQL storage for fast retrieval
+  
+  
+#### Community Interaction
+    - View all publicly published notes
+    - Like, rate, and comment on community notes
+    - Discover high-rated and most-engaged notes
+  
+  
+#### Modern UI
 
+    - Built using React.js
+    - Responsive and mobile-friendly
+    - Smooth navigation using React Router
+  
+  
+#### Backend & API
 
-Notes Management
+    - Django REST Framework backend
+    - Secure Firebase token verification
+    - Structured REST APIs for all operations
 
-Create, read, update, delete (CRUD) notes
-
-Mark notes as private or publish them to the community
-
-Indexed PostgreSQL storage for fast retrieval
-
-
-Community Interaction
-
-View all publicly published notes
-
-Like, rate, and comment on community notes
-
-Discover high-rated and most-engaged notes
-
-
-Modern UI
-
-Built using React.js
-
-Responsive and mobile-friendly
-
-Smooth navigation using React Router
-
-
-Backend & API
-
-Django REST Framework backend
-
-Secure Firebase token verification
-
-Structured REST APIs for all operations
-
-
+  
 
 ---
+  
+**2) Tech Stack**
+  
+#### Frontend
 
-2) Tech Stack
+    - React.js
+    - JavaScript
+    - HTML5, CSS
+    - Axios for API calls
+  
+#### Backend
 
-Frontend
+    - Django
+    -Django REST Framework
+    - Python
+    - Firebase Admin SDK
 
-React.js
+  
+#### Database
 
-JavaScript
+    - PostgreSQL
+    - pgAdmin for management
+  
 
-HTML5, CSS
+#### Authentication
 
-Axios for API calls
+    - Firebase Authentication
+    - Token verification in Django
 
-
-Backend
-
-Django
-
-Django REST Framework
-
-Python
-
-Firebase Admin SDK
-
-
-Database
-
-PostgreSQL
-
-pgAdmin for management
-
-
-Authentication
-
-Firebase Authentication
-
-Token verification in Django
-
-
-
+  
+  
 ---
-
+  
 3) Project Structure
 
-Project/
-│
-├── backend/
+Project/  
+│  
+├── backend/  
 │   ├── api/
-│   │   ├── models.py
-│   │   ├── views.py
-│   │   ├── serializers.py
-│   │   ├── authentication.py
-│   │   └── urls.py
-│   ├── backend/
-│   │   ├── settings.py
-│   │   ├── firebase_init.py
-│   │   └── urls.py
-│   ├── manage.py
-│
-└── frontend/
-    ├── src/
-    │   ├── pages/
-    │   ├── components/
-    │   ├── api.js
-    │   ├── App.jsx
-    │   └── main.jsx
-    └── styles/
-
-
+│   │   ├── models.py  
+│   │   ├── views.py  
+│   │   ├── serializers.py  
+│   │   ├── authentication.py 
+│   │   └── urls.py  
+│   ├── backend/  
+│   │   ├── settings.py  
+│   │   ├── firebase_init.py  
+│   │   └── urls.py  
+│   ├── manage.py  
+│  
+└── frontend/  
+    ├── src/  
+    │   ├── pages/  
+    │   ├── components/  
+    │   ├── api.js  
+    │   ├── App.jsx  
+    │   └── main.jsx  
+    └── styles/  
+  
+  
 ---
-
+  
 4) API Endpoints
 
 Endpoint	Method	Description
